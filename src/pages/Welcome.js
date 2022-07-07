@@ -1,6 +1,13 @@
+import logo from '../assets/logo.png'
+
 const Welcome = () => {
     return(
-        <h1>Welcome Page</h1>
+        <div>
+            <h1 className="fw-bold text-primary">Welcome Home!</h1>
+            <img src={logo}
+            alt="logo"/>
+        </div>
+        
     )
 }
 

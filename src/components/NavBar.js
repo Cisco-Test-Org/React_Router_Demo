@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
     return(
-        <div className="mt-5 mb-5">
+        <div className="col-4 mt-5 mb-5">
             <nav className="navbar navbar-expand-lg bg-light">
                 <div className="container-fluid">
                     <ul className="navbar-nav">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import ProductCount from "./components/ProductCount";
 import PRODUCTS from "./db/products";
 import AddProduct from "./pages/AddProduct";
 import DisplayProduct from "./pages/DisplayProduct";
@@ -33,7 +34,7 @@ const App = () => {
       <Routes>
         <Route path='/add' element={<AddProduct onAddProduct={addProduct}/>} />
         <Route path='display' element={<DisplayProduct productList={productList}
-        onClearAll={clearAllProducts} onDelete={deleteItem}/>} />
+        onClearAll={clearAllProducts} onDelete={deleteItem} />} />
         <Route path='/' exact element={<Welcome />} />
       </Routes>
     </div>
